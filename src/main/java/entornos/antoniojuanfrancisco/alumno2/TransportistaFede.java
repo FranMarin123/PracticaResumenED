@@ -1,10 +1,15 @@
 package entornos.antoniojuanfrancisco.alumno2;
 
+import entornos.antoniojuanfrancisco.Distancia;
 import entornos.antoniojuanfrancisco.EnvioNoDisponibleException;
 import entornos.antoniojuanfrancisco.Punto;
 import entornos.antoniojuanfrancisco.Transportista;
 
 public class TransportistaFede extends Transportista {
+
+    public TransportistaFede() {
+        super("Fede", "Marrón", new DistanciaManhattan());
+    }
 
     @Override
     public double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException {

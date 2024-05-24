@@ -5,6 +5,12 @@ public abstract class Transportista {
     private String color;
     private Distancia medida;
 
+    public Transportista(String nombre, String color, Distancia medida) {
+        this.nombre = nombre;
+        this.color = color;
+        this.medida = medida;
+    }
+
     public abstract double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException;
 }
 
