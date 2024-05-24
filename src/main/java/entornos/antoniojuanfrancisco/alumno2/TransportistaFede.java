@@ -1,16 +1,27 @@
 package entornos.antoniojuanfrancisco.alumno2;
 
-import entornos.antoniojuanfrancisco.Distancia;
 import entornos.antoniojuanfrancisco.EnvioNoDisponibleException;
 import entornos.antoniojuanfrancisco.Punto;
 import entornos.antoniojuanfrancisco.Transportista;
 
 public class TransportistaFede extends Transportista {
 
+    /**
+     * Asigna los valores por defecto
+     */
     public TransportistaFede() {
         super("Fede", "Marrón", new DistanciaManhattan());
     }
 
+    /**
+     * @author Francisco Javier Marín Álvarez
+     * Este método calcula el precio del envío
+     * @param origen Recibe el punto de origen
+     * @param destino Recibe el punto de destino
+     * @param peso Recibe el peso del paquete
+     * @return Devuelve el precio del envio
+     * @throws EnvioNoDisponibleException Esta excepcion indica que el envío no esta disponible
+     */
     @Override
     public double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException {
         double precio=-1;

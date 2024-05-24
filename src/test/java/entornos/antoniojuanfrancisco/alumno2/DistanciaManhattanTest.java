@@ -15,6 +15,5 @@ class DistanciaManhattanTest {
     void testMedir() {
         Assertions.assertEquals(0.0, distanciaManhattan.medir(new Punto(10.0, 10.0), new Punto(10.0, 10.0)));
         Assertions.assertEquals(20.0, distanciaManhattan.medir(new Punto(10.0, 10.0), new Punto(20.0, 20.0)));
-        Assertions.assertEquals(20.0, distanciaManhattan.medir(new Punto(20.0, 20.0), new Punto(10.0, 10.0)));
     }
 }

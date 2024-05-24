@@ -5,7 +5,7 @@ public abstract class Transportista {
     private String color;
     private Distancia medida;
 
-    public Transportista(String nombre, String color, Distancia medida) {
+    protected Transportista(String nombre, String color, Distancia medida) {
         this.nombre = nombre;
         this.color = color;
         this.medida = medida;
