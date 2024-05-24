@@ -5,6 +5,6 @@ public abstract class Transportista {
     private String color;
     private Distancia medida;
 
-    public abstract double presupuestar(Punto origen, Punto destino, double peso);
+    public abstract double presupuestar(Punto origen, Punto destino, double peso) throws EnvioNoDisponibleException;
 }
 
